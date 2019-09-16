@@ -17,6 +17,12 @@ Into clean declarative code like this:
 TestUtils.simulate.inputChange(lightningInputEl, NEW_VALUE);
 ```
 
+### Getting Started
+
+```
+npm install -D @tigerface/lwc-test-utils
+```
+
 ___
 
 Contributions are welcome.
