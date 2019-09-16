@@ -1,5 +1,5 @@
 {
-  "name": "lwc-test-utils",
+  "name": "@tigerface/lwc-test-utils",
   "version": "0.0.1",
   "description": "A collection of helpful utility functions for unit testing LWC components with Jest.",
   "scripts": {
