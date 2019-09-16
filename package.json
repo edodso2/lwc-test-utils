@@ -1,0 +1,34 @@
+{
+  "name": "lwc-test-utils",
+  "version": "0.0.1",
+  "description": "A collection of helpful utility functions for unit testing LWC components with Jest.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edodso2/lwc-test-utils.git"
+  },
+  "keywords": [
+    "LWC",
+    "Salesforce",
+    "lightning web compnents",
+    "lightning",
+    "test",
+    "Jest",
+    "unit",
+    "test",
+    "javascript",
+    "assertion",
+    "helpers",
+    "test",
+    "utils",
+    "tdd"
+  ],
+  "author": "Eric Dodson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edodso2/lwc-test-utils/issues"
+  },
+  "homepage": "https://github.com/edodso2/lwc-test-utils#readme"
+}
