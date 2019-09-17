@@ -8,14 +8,43 @@
  * 
  */
 
-export default class Simulate {
+export class Simulate {
+
+  /**
+   * Simulate a user changing the value
+   * of a checkbox
+   * @param {HTMLInputElement} checkboxEl the checkbox element
+   * @param {boolean} value the updated value
+   */
+  static checkboxChange(checkboxEl, value) {
+    // update the inputs value
+    checkboxEl.checked = value;
+
+    // fire change event
+    const changeEvent = new CustomEvent('change');
+    checkboxEl.dispatchEvent(changeEvent);
+  }
+
+
+  /**
+   * Dispatches an event from an element.
+   * @param {HTMLElement} element the element to dispatch the event from
+   * @param {string} eventName the name of the event
+   * @param {CustomEventInit<any>} [payload] the payload of the event
+   */
+  static event(element, eventName, payload) {
+    const customEvent = new CustomEvent(eventName, payload);
+    element.dispatchEvent(customEvent);
+  }
+
+
   /**
    * Simulate a user changing the value
    * of an input element
    * @param {HTMLInputElement} inputEl the input element
    * @param {string} value the updated value
    */
-  inputChange(inputEl, value) {
+  static inputChange(inputEl, value) {
     // update the inputs value
     inputEl.value = value;
 
@@ -33,7 +62,7 @@ export default class Simulate {
    * list of key values can be found here:
    * https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values
    */
-  keyUp(element, key) {
+  static keyUp(element, key) {
     const keyboardEvent = new KeyboardEvent('keyup', {
       key
     });
