@@ -1,4 +1,4 @@
-class TestUtils {
+export class TestUtils {
 
   /**
    * Return a promise to wait for any asynchronous DOM updates. Jest
