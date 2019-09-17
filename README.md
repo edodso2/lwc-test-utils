@@ -14,13 +14,24 @@ inputEl.dispatchEvent(changeEvent);
 
 Into clean declarative code like this:
 ```JavaScript
-TestUtils.simulate.inputChange(lightningInputEl, NEW_VALUE);
+Simulate.inputChange(lightningInputEl, NEW_VALUE);
 ```
 
 ### Getting Started
 
+Install the package:
 ```
 npm install -D @tigerface/lwc-test-utils
+```
+
+Import the Simulate class:
+```JavaScript
+import { Simulate } from '@tigerface/lwc-test-utils';
+```
+
+Simulate!
+```JavaScript
+Simulate.inputChange(lightningInputEl, NEW_VALUE);
 ```
 
 ___
