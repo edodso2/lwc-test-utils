@@ -68,4 +68,16 @@ export class Simulate {
     });
     element.dispatchEvent(keyboardEvent);
   }
+
+  /**
+   * Simulate a mouse event
+   * @param {HTMLElement} element the element to click
+   * @param {string} event the name of the mouse event (Ex: mousemove)
+   * @param {MouseEventInit} payload the payload of the event
+   */
+  static mouseEvent(element, event, payload) {
+    const mouseEvent = new MouseEvent(event, payload);
+    element.dispatchEvent(mouseEvent);
+  }
+
 }
