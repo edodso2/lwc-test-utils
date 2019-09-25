@@ -28,7 +28,7 @@ export class Simulate {
 
   /**
    * Dispatches an event from an element.
-   * @param {HTMLElement} element the element to dispatch the event from
+   * @param {Window | Document | HTMLElement} element the element to dispatch the event from
    * @param {string} eventName the name of the event
    * @param {CustomEventInit<any>} [payload] the payload of the event
    */
@@ -57,7 +57,7 @@ export class Simulate {
   /**
    * Simulate a user pressing a key on the
    * supplied element
-   * @param {HTMLElement} element the element to click
+   * @param {Window | Document | HTMLElement} element the element to click
    * @param {string} key the key to simulate a click. full
    * list of key values can be found here:
    * https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values
@@ -71,7 +71,7 @@ export class Simulate {
 
   /**
    * Simulate a mouse event
-   * @param {HTMLElement} element the element to click
+   * @param {Window | Document | HTMLElement} element the element to click
    * @param {string} event the name of the mouse event (Ex: mousemove)
    * @param {MouseEventInit} payload the payload of the event
    */
