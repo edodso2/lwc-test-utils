@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [0.0.5] - 2019-09-17
 ### Added
 - Simulate function for mouse events
+- Simulate function for keyboard events
 - Support for simulating events from Window or Document objects
+- Unit Tests
+
+### Deprecated
+- Simulate.keyup will be removed in version 1.0. Use keyboard event simulation instead.
+
+### Fixed
+- Issue #1
 
 ## [0.0.4] - 2019-09-17
 ### Fixed
