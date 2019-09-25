@@ -1,6 +1,8 @@
 # LWC Test Utils
 
-A collection of test utilities for unit testing LWC components with Jest.
+A collection of test utilities for unit testing LWC components with Jest. 
+
+Docs: https://edodso2.github.io/lwc-test-utils/
 
 Turn repetitive code like this:
 ```JavaScript

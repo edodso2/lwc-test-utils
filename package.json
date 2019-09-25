@@ -1,7 +1,7 @@
 {
   "name": "@tigerface/lwc-test-utils",
   "version": "0.0.5",
-  "description": "A collection of helpful utility functions for unit testing LWC components with Jest. https://edodso2.github.io/lwc-test-utils/",
+  "description": "A collection of helpful utility functions for unit testing LWC components with Jest.",
   "main": "lib/index",
   "lib": "lib/index",
   "scripts": {
