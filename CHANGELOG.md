@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.0.5] - 2019-09-17
+### Added
+- Simulate function for mouse events
+- Support for simulating events from Window or Document objects
+
 ## [0.0.4] - 2019-09-17
 ### Fixed
 - export for TestUtils
