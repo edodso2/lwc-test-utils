@@ -55,7 +55,7 @@ export declare class Simulate {
     /**
      * Simulate a keyboard event
      * @param element the element to trigger the event
-     * @param event the name of the mouse event (Ex: keyup)
+     * @param event the name of the keyboard event (Ex: keyup)
      * @param payload the payload of the event
      *
      * @example
@@ -64,11 +64,11 @@ export declare class Simulate {
      *  Simulate.keyboardEvent(inputEl, 'keyup', { key: 'Enter' });
      * ```
      */
-    static keyboardEvent(element: Window | Document | HTMLElement, event: string, payload: KeyboardEventInit): void;
+    static keyboardEvent(element: Window | Document | HTMLElement, event: 'keydown' | 'keypress' | 'keyup', payload: KeyboardEventInit): void;
     /**
      * Simulate a mouse event
      * @param element the element to click
-     * @param event the name of the mouse event (Ex: mousemove)
+     * @param event the name of the mouse event (Ex: click, dblclick, mouseup, mousemove, mousedown)
      * @param payload the payload of the event
      *
      * @example

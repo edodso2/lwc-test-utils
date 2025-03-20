@@ -2,7 +2,6 @@
  * A class for generic test utility methods
  */
 export class TestUtils {
-
   /**
    * Return a promise to wait for any asynchronous DOM updates. Jest
    * will automatically wait for the Promise chain to complete before
@@ -14,7 +13,6 @@ export class TestUtils {
    * ```
    */
   static flushPromises(): Promise<any> {
-    return new Promise(resolve => setImmediate(resolve));
+    return new Promise((resolve) => setTimeout(resolve, 0));
   }
-
 }

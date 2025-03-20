@@ -1,12 +1,12 @@
 {
   "name": "@tigerface/lwc-test-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A collection of helpful utility functions for unit testing LWC components with Jest.",
   "main": "lib/index",
   "lib": "lib/index",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "docs": "typedoc --out docs src --exclude \"**/*+(index|.spec|.e2e).ts\" --mode \"file\"",
+    "docs": "typedoc --out docs src --exclude \"**/*+(index|.spec|.e2e).ts\"",
     "test": "npx jest",
     "test:coverage": "npx jest --coverage"
   },
@@ -37,10 +37,12 @@
   },
   "homepage": "https://github.com/edodso2/lwc-test-utils#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.7",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.3"
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.10",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "typedoc": "^0.28.0",
+    "typescript": "^5.8.2"
   }
 }
